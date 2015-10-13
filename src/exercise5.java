@@ -3,11 +3,10 @@
  */
 public class exercise5 {
     public static void main(String[] args) {
-        String a = "Hang";
-        String b = "Loose";
+        String str = "Loose";
 
-        System.out.print("ZipInvert(" + a + ", "+ b + ") --> ");
-        System.out.println(ZipInvert(a, b));
+        System.out.print("ZipInvert(" + str + ", "+ str + ") --> ");
+        System.out.println(ZipInvert(str, str));
     }
     private static String ZipInvert(String a, String b) {
         return a.length() + b.length() <= 2 ? a+b :
