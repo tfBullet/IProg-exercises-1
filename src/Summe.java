@@ -1,6 +1,5 @@
-/**
- * Created by Markus M. on 12.10.15.
- */
+/** @author Markus Moser    */
+
 public class Summe {
     public static void main(String[] args) {
         int i = 6511; /*Ab 6500 ca. wird es knapp, spätestens wenn man das Programm zwei mal kurz nacheinander

@@ -1,6 +1,5 @@
-/**
- * Created by Markus M. on 12.10.15.
- */
+/** @author Markus Moser    */
+
 public class TriZip {
     public static void main(String[] args) {
         String a = "Hang";

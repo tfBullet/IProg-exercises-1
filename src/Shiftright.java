@@ -1,6 +1,5 @@
-/**
- * Created by Markus M. on 12.10.15.
- */
+/** @author Markus Moser    */
+
 public class Shiftright {
     static int counter;
 
@@ -11,7 +10,6 @@ public class Shiftright {
         System.out.print("shiftRight(" + str + ") --> ");
         System.out.println(shiftRight(str));
     }
-
 
     private static String shiftRight(String str) {
         counter++;

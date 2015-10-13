@@ -1,6 +1,5 @@
-/**
- * Created by Markus M. on 12.10.15.
- */
+/** @author Markus Moser    */
+
 public class ZipShift {
     static int counter;
 
@@ -13,6 +12,7 @@ public class ZipShift {
         System.out.print("zipShift(" + a + ", "+ shiftRight(b) + ") --> ");
         System.out.println(zipShift(a, shiftRight(b))); //Ich hoffe die Aufgabe war so gemeint, sonst kann ich sie nochmal machen :)
     }
+
     private static String zipShift(String a, String b) {
         return a.length() + b.length() <= 2 ? a+b :
                 "" + a.charAt(0) + b.charAt(0) + zipShift(a.substring(1), b.substring(1));
