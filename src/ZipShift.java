@@ -1,7 +1,7 @@
 /**
  * Created by Markus M. on 12.10.15.
  */
-public class exercise6 {
+public class ZipShift {
     static int counter;
 
     public static void main(String[] args) {
@@ -10,12 +10,12 @@ public class exercise6 {
         String b = "Loose";
 
         System.out.println("ShiftRight(" + b + ") --> " + shiftRight(b));
-        System.out.print("ZipShift(" + a + ", "+ shiftRight(b) + ") --> ");
-        System.out.println(ZipShift(a, shiftRight(b))); //Ich hoffe die Aufgabe war so gemeint, sonst kann ich sie nochmal machen :)
+        System.out.print("zipShift(" + a + ", "+ shiftRight(b) + ") --> ");
+        System.out.println(zipShift(a, shiftRight(b))); //Ich hoffe die Aufgabe war so gemeint, sonst kann ich sie nochmal machen :)
     }
-    private static String ZipShift(String a, String b) {
+    private static String zipShift(String a, String b) {
         return a.length() + b.length() <= 2 ? a+b :
-                "" + a.charAt(0) + b.charAt(0) + ZipShift(a.substring(1), b.substring(1));
+                "" + a.charAt(0) + b.charAt(0) + zipShift(a.substring(1), b.substring(1));
     }
 
     private static String shiftRight(String str) {

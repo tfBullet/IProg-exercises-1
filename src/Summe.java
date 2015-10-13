@@ -1,7 +1,7 @@
 /**
  * Created by Markus M. on 12.10.15.
  */
-public class exercise8 {
+public class Summe {
     public static void main(String[] args) {
         int i = 6511; /*Ab 6500 ca. wird es knapp, spätestens wenn man das Programm zwei mal kurz nacheinander
                       / ausführt kommt (vermutlich die garbage collection) nicht mehr hinterher und der stack läuft voll
@@ -11,12 +11,12 @@ public class exercise8 {
                       / geht das halt doch nicht ;P
                       / PS.: Passiert auf Android übrigens auch, wenn man versucht SEHR große Bilder zu laden ^^  */
 
-        System.out.print("Summe(" + i + ") --> ");
-        System.out.println(Summe(i));
+        System.out.print("summe(" + i + ") --> ");
+        System.out.println(summe(i));
     }
 
-    private static long Summe(int i){
-        return i <= 1 ? i : i + Summe(i - 1);
+    private static long summe(int i){
+        return i <= 1 ? i : i + summe(i - 1);
     }
 }
 

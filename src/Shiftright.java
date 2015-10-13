@@ -1,7 +1,7 @@
 /**
  * Created by Markus M. on 12.10.15.
  */
-public class exercise2 {
+public class Shiftright {
     static int counter;
 
     public static void main(String[] args) {
