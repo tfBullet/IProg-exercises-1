@@ -9,7 +9,6 @@ public class exercise5 {
         System.out.println(ZipInvert(str, str));
     }
     private static String ZipInvert(String a, String b) {
-        return a.length() + b.length() <= 2 ? a+b :
-                "" + a.charAt(0) + b.charAt(b.length() - 1) + ZipInvert(a.substring(1), b.substring(0, b.length() - 1));
+        return a.length() + b.length() <= 2 ? a+b : "" + a.charAt(0) + b.charAt(b.length() - 1) + ZipInvert(a.substring(1), b.substring(0, b.length() - 1));
     }
 }
