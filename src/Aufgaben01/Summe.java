@@ -1,3 +1,5 @@
+package Aufgaben01;
+
 /** @author Markus Moser    */
 
 public class Summe {
