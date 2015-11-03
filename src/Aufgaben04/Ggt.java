@@ -32,15 +32,15 @@ public class Ggt {
 
         String tmp = eingabe.promptAndRead("Bitte gebe die erste Zahl ein. \n" + "Für Beenden drücke Return");
 
-        if (tmp.length() != 0 && !tmp.isEmpty()) {
+        while(tmp.length() != 0 && !tmp.isEmpty()){
             eins = Integer.parseInt(tmp.trim()); //wandelt String in int um
             tmp = eingabe.promptAndRead("Bitte geben Sie eine zweite Zahl an.");
-            if (tmp.length() != 0 && !tmp.isEmpty()) {
+            if (tmp.length() != 0 && !tmp.isEmpty()){
                 zwei = Integer.parseInt(tmp.trim());
-                int ergebnis = ggt(eins, zwei);
-                eingabe.write("Der größte gemeinsame Teiler von " + eins + " und " + zwei + " ist " + ergebnis);
-                //tmp = eingabe.promptAndRead("\nFür einen weiteren ggT bitte neue erste Zahl eingeben.\nFür Beenden drücke Return.");
+                eingabe.write("Der größte gemeinsame Teiler von " + eins + " und " + zwei + " ist " + ggt(eins, zwei));
             }
+            else { break; }
+            tmp = eingabe.promptAndRead("\nFür einen weiteren ggT bitte neue erste Zahl eingeben.\nFür Beenden drücke Return.");
         }
     }
 }
