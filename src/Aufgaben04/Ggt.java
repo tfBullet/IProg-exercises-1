@@ -30,16 +30,16 @@ public class Ggt {
         eingabe = new InteractiveIO();
         eingabe.write("Größter gemeinsamer Teiler(ggT) zweier Zahlen ermitteln: \n");
 
-        String a = eingabe.promptAndRead("Bitte gebe die erste Zahl ein. \n" + "Für Beenden drücke Return");
+        String tmp = eingabe.promptAndRead("Bitte gebe die erste Zahl ein. \n" + "Für Beenden drücke Return");
 
-        if (a.length() != 0 && !a.isEmpty()) {
-            eins = Integer.parseInt(a.trim()); //wandelt String in int um
-            a = eingabe.promptAndRead("Bitte geben Sie eine zweite Zahl an.");
-            if (a.length() != 0 && !a.isEmpty()) {
-                zwei = Integer.parseInt(a.trim());
+        if (tmp.length() != 0 && !tmp.isEmpty()) {
+            eins = Integer.parseInt(tmp.trim()); //wandelt String in int um
+            tmp = eingabe.promptAndRead("Bitte geben Sie eine zweite Zahl an.");
+            if (tmp.length() != 0 && !tmp.isEmpty()) {
+                zwei = Integer.parseInt(tmp.trim());
                 int ergebnis = ggt(eins, zwei);
                 eingabe.write("Der größte gemeinsame Teiler von " + eins + " und " + zwei + " ist " + ergebnis);
-                //a = eingabe.promptAndRead("\nFür einen weiteren ggT bitte neue erste Zahl eingeben.\nFür Beenden drücke Return.");
+                //tmp = eingabe.promptAndRead("\nFür einen weiteren ggT bitte neue erste Zahl eingeben.\nFür Beenden drücke Return.");
             }
         }
     }
